@@ -29,6 +29,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        cache-dependency-path: automa/package-lock.json
     - run: npm install --global yarn
     - run: |
         echo 'export default function() {
