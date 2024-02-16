@@ -21,13 +21,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    - run: gh repo clone AutomaApp/automa && cd automa
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install --global yarn
-    - run: gh repo clone AutomaApp/automa && cd automa
     - run: |
         echo 'export default function() {
           return 'anything-you-want';
