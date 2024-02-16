@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body data-extension-installed="2.2.0" class="vsc-initialized">
+    <div id="app" class="ember-application">
+        <main>
+            <div class="pvd-container">
+                <div data-name="t-source/from" id="ember6" class="ember-view">
+                    <section data-name="t-section" id="ember7" class="ember-view">
+                        <tc-source tc-type="from" tc-disable-paper-check="true" tc-eastern-time-offset="-5"
+                            tc-crypto-context="false" tc-redirect-url-enabled="true" tc-disable-add-bank="false"
+                            tc-disable-transfer-of-assets="false" tc-disable-send-with-paypal="false"
+                            tc-disable-restrictions="false" tc-disable-prenote-banks="true"
+                            tc-show-unlinked-banks="false" tc-contribution-error="false">
+                            <script>
+                                // create shadow root
+                                const root = document.querySelector('tc-source')
+                                const shadow = root.attachShadow({ mode: 'open' })
+                                const div = document.createElement('div')
+                                div.innerHTML = `
+                                    <div class="pvd-form-row tc-source-container">
+                                <div class="form-row-label">
+                                    <label for="select">
+                                        From
+                                    </label>
+                                </div>
+                                <div class="form-row-content">
+                                    <select id="select" class="pvd-select"
+                                        aria-invalid="false">
+                                        <option disabled="" value="default" selected="">Select one</option>
+                                        <optgroup label="Xoxo Accounts">
+                                            <option value="3">
+                                                Something (2321)
+                                            </option>
+                                            <option value="2">
+                                                Something (2321)
+                                            </option>
+                                            <option value="6">
+                                                Something (2321)
+                                            </option>
+                                            <option value="4">
+                                                Something (2321)
+                                            </option>
+                                            <option value="1">
+                                                Something (2321)
+                                            </option>
+                                            <option value="5">
+                                                Something (2321)
+                                            </option>
+                                        </optgroup>
+                                        <optgroup label="YoYo">
+                                            <option value="10">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="19">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="18">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="9">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="7">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="12">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="15">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="11">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="14">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="20">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="21">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="8">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="17">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="13">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="22">
+                                                Something (****2321)
+                                            </option>
+                                            <option value="16">
+                                                Something (****2321)
+                                            </option>
+                                        </optgroup>
+                                        <optgroup label="Other Methods">
+                                            <option value="add-bank">Add aor recipient</option>
+                                            <option value="transfer-of-assets">Transfer an account to Fidelity</option>
+                                            <option value="send-with-PayPal"> Send money with PayPal</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                </div>
+                            </div>
+                                `
+                                shadow.appendChild(div)
+                            </script>
+                        </tc-source>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
