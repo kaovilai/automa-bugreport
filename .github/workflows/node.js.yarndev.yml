@@ -30,6 +30,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install --global yarn
     - run: |
+        pwd
+        cd automa
         echo 'export default function() {
           return 'anything-you-want';
         }' > src/utils/getPassKey.js;
