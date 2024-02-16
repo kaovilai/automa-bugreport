@@ -35,7 +35,7 @@ jobs:
         echo 'export default function() {
           return 'anything-you-want';
         }' > src/utils/getPassKey.js;
-    - run: yarn dev
+        yarn dev
     # - run: npm ci
     # - run: npm run build --if-present
     # - run: npm test
